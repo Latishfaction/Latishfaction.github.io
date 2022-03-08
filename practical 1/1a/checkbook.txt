@@ -1,0 +1,7 @@
+[✔] Home page
+[✔] Registration and user Login
+[✔] User profile page
+[✔] Books catalog
+[] Shopping cart
+[] Payment by credit card
+[✔] Order Conformation

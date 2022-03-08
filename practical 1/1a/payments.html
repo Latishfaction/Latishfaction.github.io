@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical : 1A</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color: #ebebeb;">
+        <header class="website-header">
+            <div id="website-heading">
+                <div class="img-left">
+                    <img src="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png" alt="" width="5%" style="float: left;">
+                </div>
+                <h1>Online Bookstore</h1>
+                <p>Online bokstore practical 1A</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="books.html">Books Catalogue</a></li>
+                    <li><a href="scart.html">Shopping Cart</a></li>
+                    <li><a href="payments.html">Payments by credit card</a></li>
+                    <li><a href="ordercon.html">Order conformation</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="section-container">
+            <div class="payment-container">
+                <spa class="card-img">
+                    <img src="https://www.pngitem.com/pimgs/m/376-3769996_debit-card-blue-visa-hd-png-download.png" alt="card">
+                </spa>
+                <div class="payment-form">
+                    <span class="form-heading">Payment Detail</span>
+                    <br>
+                    <form action="#">
+                        <label for="Name" class="form-label">
+                            <span>Name on card</span>
+                            <input type="text">
+                        </label>
+ 
+                        <label for="Card" class="form-label">
+                            <span>Card Number</span>
+                            <input type="number" name="cardnumber" min="0000000000000000" max="9999999999999999">
+                        </label>
+                        
+                        <label for="Validity" class="form-label">
+                            <span>Validity</span>
+                            <input type="date">
+                        </label>
+                        
+                        <label for="CVV" class="form-label">
+                            <span>CVV</span>
+                            <input type="number" min="000" max="999">
+                        </label>
+                        <label for="payment" class="form-label">
+                            <a href="#" class="payment-button">Pay <span>₹950.00</span></a>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
