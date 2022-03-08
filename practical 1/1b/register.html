@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title> Practical 1B </title>
+    <link rel="stylesheet" href="../1a/style.css">
+</head>
+<style>
+    .header {
+        padding: 40px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+    }
+</style>
+<script type="text/javascript">
+
+    function validate() {
+        var username = document.myform.username.value;
+        var pass = document.myform.pass.value;
+        var gender1 = document.myform[2];
+        var gender2 =  document.myform[3];
+        var addressBar = document.myform[4];
+        var Mobile = document.myform[5];
+
+        if (username == null || username == "") {
+            alert("Name can't be blank,please fill the name");
+            return false;
+        }
+        else if (pass.length < 8) {
+            alert("Password must be at least 8 characters long.");
+            return false;
+        }
+        else if((gender1.checked || gender2.checked) ==false){
+            alert("please select atlest one gender");
+            return false;
+
+        }
+        else if (addressBar.textLength == 0){
+            alert("please add your address")
+            return false;
+        }
+        else if ((Mobile.textLength >= 10 && Mobile.textLength < 11) == false){
+            alert("Please enter valid mobile no.")
+        }
+        else{
+            alert("Form Validate Successfully! Now you can submit the form");
+        }
+    }  
+</script>
+
+<body>
+
+    <header class="website-header">
+        <div id="website-heading">
+            <div class="img-left">
+                <img src="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png" alt="" width="5%" style="float: left;">
+            </div>
+            <h1>Online Bookstore</h1>
+            <p>Online bokstore practical 1B</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <table>
+                <form name="myform" method="post" onsubmit="validate();"action="register.html">
+                    <tr>
+                        <td>
+                            <strong>Name:</strong>
+                        </td>
+                        <td>
+                            <input type="text" name="username" size="25">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <strong>Password : </strong>
+                        </td>
+                        <td>
+                            <input name="pass" type="password">
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <strong>Gender </strong>
+                        </td>
+                        <td>
+                            <strong>Male</strong>
+                            <input type="radio" value="male" name="gender">
+                            <strong>Female</strong>
+                            <input type="radio" value="female" name="gender" </p>
+                        </td>
+    
+                    <tr>
+                        <td>
+                            <strong>Address:</strong>
+                        </td>
+                        <td>
+                            <textarea name="address" row="6" cols="20" required></textarea>
+                        </td>
+    
+                    <tr>
+                        <td>
+                            <strong>Mobile no:</strong>
+                        </td>
+    
+                        <td>
+                            <input type="number" name="phno" maxlength="1" required>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td col="2"> 
+                        <td>
+                            <input class="button" type="submit" value="submit" >
+                            <input class="button" type="reset" value="reset">
+                            <input class="button" value ="Isvalid" type="button" onclick="validate();" >
+                        </td>
+                        </td>
+                </form>
+    
+                <tr>
+                    <td>
+    
+                    </td>
+                </tr>
+    
+    
+    
+    
+            </table>
+    
+    
+        </div>
+    </section>
+
+</body>
+
+</html>
