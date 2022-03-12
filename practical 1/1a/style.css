@@ -322,3 +322,208 @@ nav li a{
     display: flex;
     justify-content: space-between;
 }
+/* ************************* */
+/* user profile */
+.user-profile-container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.user-profile-tab{
+    /* border: 2px solid blue; */
+    width: 18%;
+    margin: 30px 30px 0px 30px;
+}
+.user-intro{
+    /* border: 2px solid black; */
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    background-color: #c8d1d6;
+    padding: 8px;
+    height: 110px;
+    margin-bottom: 2px;
+    
+}
+.user-side-name{
+    /* border: 2px solid red; */
+    width: 47%;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 5px 5px 17px;   
+}
+.user-money{
+    /* border: 2px solid red; */
+    padding: 5px;
+    margin: 0px 5px;
+}
+.user-money-bonus{
+    color: #292828;
+    font-size: 13px;
+}
+.user-money-money{
+    background-color: #fff;
+    color: #1b8dcf;
+    font-weight: bold;
+    padding: 5px 9px;
+    border-radius: 25px;
+}
+
+.profie-options{
+    background-color: #dfe4e7;
+    /* padding: 10px; */
+    text-decoration: none;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+}
+
+.profie-options > li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.profie-options>li :hover{
+    background-color: #cfd2d3;
+}
+.profie-options>li :hover:last-child{
+    border-radius: 8px;
+}
+.profie-options>li :hover:first-child{
+    border-radius: 8px;
+}
+
+.profile-op-link{
+    color: #19191a;
+    text-decoration: none;
+    display: block;
+    padding: 23px;
+    
+}
+.user-log-out-btn{
+    color: #424242;
+    border-top: 2px solid #c4c4c4;
+}
+
+.side-img{
+    width: 80px;
+    border-radius: 70%;
+}
+
+
+
+.user-profile-details{
+    /* border: 2px solid blue; */
+    margin: 30px 30px 0px 50px;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 7px;
+
+}
+.user-pro-assets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.user-profile-heading{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px;
+}
+.user-profile-form-details{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-left: 25px;
+}
+.user-profile-form{
+    /* border: 2px solid red; */
+    padding: 10px 10px 10px 0px;
+    color: #424242;
+}
+
+.form-input{
+    /* border: 2px solid red; */
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 7px 7px 7px 14px;
+    width: 35%;
+    color: #19191a;
+}
+.pswd-btn-container{
+    display: block;
+    padding: 15px 15px 15px 0px;
+}
+
+.pswd-btn{
+    padding: 6px 10px;
+    margin: 5px 5px 5px 0px;
+    border: 2px solid #1b8dcf;
+    color: #1b8dcf;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.user-profile-photo{
+    width: 130px;
+}
+.out-of-form{
+    /* border: 2px solid red; */
+    height: 200px;
+    width: 22%;
+    padding: 5px;
+    margin: 0px 28px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.img-message{
+    font-size: 18px;
+    color: #424242;
+    padding: 5px;
+}
+.img-upload-btn{
+    padding: 6px 10px;
+    margin: 13px 0px 0px 6px;
+    border: 2px solid #1b8dcf;
+    color: #1b8dcf;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.other-details{
+    /* border: 2px solid red; */
+    margin: 25px 0px 0px 0px;
+    padding: 6px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.user-balance{
+    margin: 0px 0px 0px 25px;
+}
+.user-balance-amt{
+    color: #292828;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 7px;
+}
+.edit-profile-btn{
+    padding: 6px 10px;
+    margin: 5px 20px 0px 0px;
+    /* border: 2px solid #1b8dcf; */
+    color: #fff;
+    background-color: #1b8dcf;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;    
+}
