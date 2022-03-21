@@ -60,13 +60,19 @@
         </div>
         <nav>
             <ul>
+
                 <li><a href="login.html">Login</a></li>
                 <li><a href="register.html">Register</a></li>
+                <li><a href="user-profile.html">User Profile</a></li>
+                <li><a href="payments.html">Payments</a></li>
+
             </ul>
         </nav>
     </header>
 
     <section>
+        <h1 class="form-heading-upper">* Form Validation *</h1>
+        <p class="form-heading-upper" style="margin: 0px;">Click on <strong>"Validate"</strong> to validate the form</p>
         <div class="container">
             <table>
                 <form name="myform" method="post" onsubmit="validate();"action="register.html">
@@ -122,7 +128,7 @@
                         <td>
                             <input class="button" type="submit" value="submit" >
                             <input class="button" type="reset" value="reset">
-                            <input class="button" value ="Isvalid" type="button" onclick="validate();" >
+                            <input class="button" value ="Validate" type="button" onclick="validate();" >
                         </td>
                         </td>
                 </form>

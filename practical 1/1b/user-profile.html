@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>Practical : 1 B</title>
+    <link rel="stylesheet" href="../1a/style.css">
+
+    <script type="text/javascript">
+
+        function validate() {
+            var form = document.forms[0];
+            var fname = form[0];
+            var lname = form[1];
+            var email = form[2];
+            var dob = form[3];
+
+            if (fname.textLength <= 0){
+                alert("Please Fill the First Name!");                
+            }
+            else if (lname.textLength <= 0){
+                alert("Please Fill the Last Name!");
+            }
+            else if (email.textLength <= 5){
+                alert("Please enter the email Properly");
+            }
+            else if (dob.textLength < 10){
+                alert("Please enter your DOB");
+            }
+
+            else{
+                alert("Form Validate successfully ✔");
+            }
+        }  
+    </script>
+</head>
+<style>
+    .header {
+        padding: 40px;
+        text-align: center;
+        color: white;
+    }
+    body{
+        background-color:   #f3f3f3;
+    }
+</style>
+
+<body style="overflow: scroll;">
+
+    <header class="website-header">
+        <div id="website-heading">
+            <div class="img-left">
+                <img src="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png" alt="" width="5%" style="float: left;">
+            </div>
+            <h1>Online Bookstore</h1>
+            <p>Online bokstore practical 1 B</p>
+        </div>
+        <nav>
+
+            <ul>
+
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="user-profile.html">User Profile</a></li>
+                <li><a href="payments.html">Payments</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="form-heading-upper">* Form Validation *</h1>
+        <p class="form-heading-upper" style="margin: 0px;">Click on <strong>"Save Profie"</strong> to validate the form</p>
+        <div class="user-profile-container">
+            <div class="user-profile-tab">
+                <div class="user-intro">
+                    <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"  class="side-img" alt="photo">
+                    <div class="user-side-name">Ruby Rai</div>
+                    <div class="user-lower-details">
+                        <span class="user-money">
+                            <span class="user-money-bonus">
+                                Bonus 
+                            </span>
+                            <span class="user-money-money">
+                                ₹ 2000.00
+                            </span>
+
+                            </span>
+                    </div>
+                </div>
+
+                <ul class="profie-options">
+                    <li><a href="#" class="profile-op-link">My order</a></li>
+                    <li><a href="#" class="profile-op-link">wishlist</a></li>
+                    <li><a href="#" class="profile-op-link">notifications</a></li>
+                    <li><a href="#" class="profile-op-link">settings</a></li>
+                    <li><a href="#" class="user-log-out-btn profile-op-link">log out</a></li>
+                </ul>
+            </div>
+
+            <div class="user-profile-details">
+                <div class="user-profile-heading">user profile</div>
+                <div class="line"></div>
+                <div class="user-pro-assets">
+                    <div class="user-profile-form-details">
+                        <form action="#" name="myform">
+                            <label for="user" class="user-profile-form">
+                                <span>first name</span>
+                                <input type="text" class="form-input" value="Ruby">
+                            </label>
+    
+                            <label for="user" class="user-profile-form">
+                                <span>last name</span>
+                                
+                                <input type="text" class="form-input" value="Rai">
+                            </label>
+    
+                            <label for="user" class="user-profile-form">
+                                <span>email</span>
+                                
+                                <input type="email" class="form-input" value="RaiRuby@gmail.com">
+                            </label>
+    
+                            <label for="user" class="user-profile-form">
+                                <span>Birthday</span>
+                                
+                                    <input type="date" class="form-input" value="1991-05-05">
+                            </label>
+                            <div class="pswd-btn-container"><a href="#" class="pswd-btn">change password</a></div>
+                        </form>
+                    </div>
+                    <div class="out-of-form">
+                        <div class="img-message">Profile Photo</div>
+                        <img src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="user-profile-photo" alt="photo">
+    
+                        <div class="btn"><a href="#" class="img-upload-btn">upload new</a></div>
+                    </div>
+                </div>
+                <div class="other-details">
+                    <div class="user-balance">Current Balance
+                        <div class="user-balance-amt">₹ 2000.00</div>
+                    </div>
+                    <div class="edit-profile-img">
+                        <a href="#" class="edit-profile-btn btns" onclick="validate();">Save Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

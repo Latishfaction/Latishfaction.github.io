@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical : 1 B</title>
+        <link rel="stylesheet" href="../1a/style.css">
+
+
+        <script type="text/javascript">
+
+            function validate() {
+                var form = document.forms[0];
+                var name = form[0];
+                var cardno = form[1];
+                var validity = form[2];
+                var cvv = form[3];
+                
+                if (name.textLength <=0){
+                    alert("Please Enter your name");
+                }
+                else if (cardno.textLength ==0){
+                    alert("Please enter your card no")
+                }
+                else if (cardno.textLength != 16){
+                    alert("Your card must have 16 digits.Enter valid card number")
+                }
+                else if (validity.textLength < 10){
+                    alert("Please enter your Card Validity");
+                }
+                else if (cvv.textLength ==0){
+                    alert("Please enter your CVV number")
+                }
+                else if (cvv.textLength !=3){
+                    alert("Enter valid CVV number.Your CVV number must have 3 digit.")
+                }
+                else{
+                    alert("Form Validate successfully ✔");
+                }
+
+            }  
+        </script>
+
+    </head>
+    <body style="background-color: #ebebeb;">
+        <header class="website-header">
+            <div id="website-heading">
+                <div class="img-left">
+                    <img src="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png" alt="" width="5%" style="float: left;">
+                </div>
+                <h1>Online Bookstore</h1>
+                <p>Online bokstore practical 1 B</p>
+            </div>
+            <nav>
+
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="user-profile.html">User Profile</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+    
+                </ul>
+            </nav>
+        </header>
+        
+        <h1 class="form-heading-upper">* Form Validation *</h1>
+        <p class="form-heading-upper" style="margin: 0px;">Click on <strong>Pay</strong> Button to validate</p>
+        <section class="section-container">
+            <div class="payment-container">
+                <spa class="card-img">
+                    <img src="https://www.pngitem.com/pimgs/m/376-3769996_debit-card-blue-visa-hd-png-download.png" alt="card">
+                </spa>
+                <div class="payment-form">
+                    <span class="form-heading">Payment Detail</span>
+                    <br>
+                    <form action="#">
+                        <label for="Name" class="form-label">
+                            <span>Name on card</span>
+                            <input type="text">
+                        </label>
+ 
+                        <label for="Card" class="form-label">
+                            <span>Card Number</span>
+                            <input type="number" name="cardnumber" min="0000000000000000" max="9999999999999999">
+                        </label>
+                        
+                        <label for="Validity" class="form-label">
+                            <span>Validity</span>
+                            <input type="date">
+                        </label>
+                        
+                        <label for="CVV" class="form-label">
+                            <span>CVV</span>
+                            <input type="number" min="000" max="999">
+                        </label>
+                        <label for="payment" class="form-label">
+                            <a href="#" class="payment-button" onclick="validate();">Pay <span>₹950.00</span></a>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

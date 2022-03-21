@@ -527,3 +527,9 @@ nav li a{
     border-radius: 6px;
     display: inline-block;    
 }
+/* ********************************************************** */
+.form-heading-upper{
+    text-align: center;
+    margin: 15px 0px;
+    color: #1b2dcf;
+}
