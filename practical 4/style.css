@@ -1,0 +1,27 @@
+body 
+{
+    background-color: blueviolet;
+    color: azure;
+    font-size: 120%;
+background-image: url("https://imgv3.fotor.com/images/gallery/3-Color-splash.jpg");
+}
+h1
+ {
+    color: red;
+    font-size: 140%;
+    background-color: black;
+    padding: 10px;
+}
+#intro 
+{
+    font-size: 1.3em;
+color:yellow;
+background-color: black;
+padding: 10px;
+}
+.colorful
+ {
+    color: orange;
+    background-color: black;
+    padding: 10px;
+}
